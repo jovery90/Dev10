@@ -1,0 +1,39 @@
+header{
+    background-color: #a10b13;
+    color: #fef9ff;
+    height: 60px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #a10b13;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+}
+
+h1 {
+  font-family: 'Barriecito', cursive;
+}
+
+
+nav a {
+  color: black;
+}
+
+nav a:visited {
+    font-style: normal;
+    color: gray;
+}
+
+nav a:hover {
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+}
+
+nav a:active {
+    font-weight: bold;
+    text-decoration: none;
+}
