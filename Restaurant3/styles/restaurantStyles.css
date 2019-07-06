@@ -17,14 +17,13 @@ h1 {
   font-family: 'Barriecito', cursive;
 }
 
-
 nav a {
   color: black;
 }
 
 nav a:visited {
     font-style: normal;
-    color: gray;
+    color: #ffffff;
 }
 
 nav a:hover {
@@ -36,4 +35,14 @@ nav a:hover {
 nav a:active {
     text-decoration: none;
     font-weight: normal;
+}
+
+nav .btn {
+    background-color:  #a10b13;
+    color: black;
+}
+
+#carouselStyles {
+  background-color:  #a10b13;
+  color: #fef9ff;
 }

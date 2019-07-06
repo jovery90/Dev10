@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact Us</title>
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="scripts/RestaurantScripts.js"></script>
+    <style media="screen">
+
+    #formHolder, #buttonsHolder {
+      width: 60%;
+      margin: auto;
+      text-align: right;
+      font-size: 1.4em;
+    }
+
+    #radioHolder {
+      width: 100%;
+      text-align: left;
+      font-size: 1.4em;
+    }
+
+    #radioButtons {
+      text-align: left;
+      padding-left: 2em;
+    }
+
+    #submitButton {
+      text-align: center;
+    }
+
+    #textHolder{
+      height: 100px;
+    }
+
+    input[type=text], #dropDown, #textHolder{
+      /* width here controls box areas */
+      border: 2px solid #0d1f2d;
+      width: 80%;
+      box-sizing: border-box;
+      font-size: .7em;
+    }
+
+    input[type=checkbox] {
+        transform: scale(2);
+    }
+
+    input[type=radio] {
+        transform: scale(2);
+    }
+
+    #buttonValues {
+      font-size: 1.4em;
+      text-align: left;
+    }
+
+    #BestDays {
+
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <h2>Javascript is currently disabled on your browser.  Please enable it for optimal viewing.</h2>
+    </noscript>
+    <header>
+      <h1>American Eats</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+      <a href="home.html" ><img src="images/home.svg" alt="Home Button" width="50"></a>
+      <a class="btn badge-pill" href="menu.html">Menu</a>
+      <a class="btn badge-pill" href="contact.html">Contact Us</a>
+    </nav>
+
+    <hr>
+
+
+    <section>
+      <article id="contact">
+        <form action="submit.html" method="post">
+<div class="container" id="formHolder">
+        <div class="form-group row">
+          <label class="col-sm-5 col-form-label" for="name"><span style="font-weight: bold;">Name:</span></label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="nameInput" value="" name="fname" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-5 col-form-label" for="email"><span style="font-weight: bold;">Email:</span></label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="emailInput" name="email" value=""required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-5 col-form-label" for="phone"><span style="font-weight: bold;">Phone:</span></label>
+          <div class="col-sm-7">
+            <input type="text" class="form-control" id="phoneInput" name="phone" value="" required>
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label class="col-sm-5 col-form-label" for="contact"><span style="">Reason for Inquiry:</span></label>
+          <div class="col-sm-7">
+            <select class="form-control" id="dropDown" class="form-control form-control-lg" name="contact">
+              <option value="catering" selected>Catering</option>
+              <option value="privateParty">Private Party</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-sm-5 col-form-label" for="info"><span style="">Additional Information:</span></label>
+            <div class="col-sm-7">
+              <textarea class="form-control" id="textHolder" name="info"></textarea>
+            </div>
+        </div>
+
+      </article>
+</div>
+
+<div class="container" id="radioHolder">
+      <article>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend id="HaveBeen" class="col-form-label col-sm-5 pt-0"><span style="">Have you been to the restaurant?</span></legend>
+                <div id="radioButtons"class="col-sm-7">
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="choice1" name="questionnaire" value="yes">
+                    <label class="form-check-label" for="choice1">No</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="choice2" name="questionnaire" value="no">
+                    <label class="form-check-label" for="choice2">Yes</label>
+                  </div>
+
+                </div>
+
+              </div>
+
+        </fieldset>
+
+      </article>
+</div>
+
+
+<div class="container" id="buttonsHolder">
+      <article>
+        <div class="form-group row">
+          <div id="BestDays" class="col-sm-5"><span style="">Best days to contact you:</span></div>
+            <div class="col-sm-7" id="buttonValues">
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="monday" name="contactDay" value="monday">
+                <label class="form-check-label" for="monday">M</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="tuesday" name="contactDay" value="tuesday">
+                <label class="form-check-label" for="tuesday">T</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="wednesday" name="contactDay" value="wednesday">
+                <label class="form-check-label" for="wednesday">W</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="thursday" name="contactDay" value="thursday">
+                <label class="form-check-label" for="thursday">Th</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="friday" name="contactDay" value="friday">
+                <label class="form-check-label" for="friday">F</label>
+              </div>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+        <p id="submitButton" ><input onclick= "validateSubmission()" class="btn btn-primary" type="button" name="submit" value="Send Request"></p>
+      </article>
+        </form>
+</div>
+    </section>
+
+    <footer>
+      <hr>
+      <p>1901 Dallas Ave. Dallas, Texas 75001</p>
+      <p>817-350-8808</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
