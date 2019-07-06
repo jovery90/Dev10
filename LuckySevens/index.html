@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lucky Sevens</title>
+    <script type="text/javascript" src="scripts/DiceRollScript.js"></script>
+  </head>
+  <body>
+    <h1 id="luckyTitle">Lucky Sevens</h1>
+    <br>
+    <br>
+    <h2>Starting Bet: <br>
+      <input type="text" id="inputBet" placeholder="$0.00" > <br>
+      <button id="replayButton" onclick= "playGame(); revealStats();">Play</button>
+    </h2>
+    <br>
+    <br>
+
+    <table id="statsTable" style="display:none;">
+
+      <tbody>
+      <tr>
+        <td>Starting Bet:</td>
+        <td><span id="printStartingBet">?</span></td>
+      </tr>
+
+      <tr>
+        <td>Total Rolls Before Going Broke:</td>
+        <td><span id="printRollCount">?</span></td>
+      </tr>
+      <tr>
+        <td>Highest Amount Won:</td>
+        <td><span id="printHighestMoney">?</span></td>
+      </tr>
+      <tr>
+        <td>Roll Count At Highest Amount Won:</td>
+        <td><span id="printHighestMoneyRoll">?</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
