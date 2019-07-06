@@ -18,6 +18,7 @@ function rollDice(){
 
 function revealStats(){
   document.getElementById("statsTable").style.display = "block";
+  document.getElementById("statsInfo").style.display = "block";
 }
 
 
@@ -59,6 +60,8 @@ function playGame() {
       document.getElementById("printHighestMoney").innerText = highestMoney;
       document.getElementById("printHighestMoneyRoll").innerText = highestMoneyRoll;
       document.getElementById("replayButton").innerText = "Play Again?";
+
+      document.getElementById("inputBet").value = "";
     }
   }
 
