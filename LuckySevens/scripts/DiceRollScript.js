@@ -29,7 +29,7 @@ function playGame() {
   highestMoney = 0;
   highestMoneyRoll = 0;
 
-  startingBet = document.getElementById("inputBet").value;
+  startingBet = Number(document.getElementById("inputBet").value);
 
   if (startingBet <= 0){
     alert("The starting bid must be greater than 0.");
@@ -46,7 +46,7 @@ function playGame() {
 
     if (dieTotal == 7) {
       currentMoney += 4;
-      if (currentMoney > highestMoney) {
+      if (currentMoney >= highestMoney) {
         highestMoney = currentMoney;
         highestMoneyRoll = rollCount;
       }
