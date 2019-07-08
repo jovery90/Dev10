@@ -55,9 +55,9 @@ function playGame() {
       currentMoney -= 1;
     }
     if (currentMoney <= 0){
-      document.getElementById("printStartingBet").innerText = startingBet;
+      document.getElementById("printStartingBet").innerText = "$"+startingBet;
       document.getElementById("printRollCount").innerText = rollCount;
-      document.getElementById("printHighestMoney").innerText = highestMoney;
+      document.getElementById("printHighestMoney").innerText = "$"+highestMoney;
       document.getElementById("printHighestMoneyRoll").innerText = highestMoneyRoll;
       document.getElementById("replayButton").innerText = "Play Again?";
 
